@@ -1,0 +1,29 @@
+Explain Big O notation and how it helps in analyzing algorithms.
+
+Big O notation describes the upper bound of an algorithm's time complexity as a function of the input size, denoted as O(f(n)). It helps to measure and compare the efficiency of algorithms, particularly in terms of execution time or space usage. It provides a high-level understanding of an algorithm's performance, allowing developers to predict how the algorithm will scale with increasing input sizes.
+Best, Average, and Worst-Case Scenarios:
+
+
+Describe the best, average, and worst-case scenarios for search operations.
+Best Case: Algorithm performs the minimum number of operations in best case. For search operations, this could be finding the target item on the first try.
+Average Case: Represents the expected number of operations the algorithm performs for random inputs. It considers all possible inputs.
+Worst Case: The scenario where the algorithm performs the maximum number of operations.
+
+Compare the time complexity of linear and binary search algorithms.
+
+Linear Search:
+
+Best Case: O(1) 
+Average Case: O(n) 
+Worst Case: O(n) 
+
+Binary Search:
+
+Best Case: O(1) 
+Average Case: O(log n) 
+Worst Case: O(log n) 
+
+
+Discuss which algorithm is more suitable for your platform and why.
+Binary search is more suitable because it is more efficient regarding the complexity. It has less time complexity than linear search.
+

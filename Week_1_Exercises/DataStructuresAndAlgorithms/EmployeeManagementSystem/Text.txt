@@ -1,0 +1,22 @@
+Explain how arrays are represented in memory and their advantages.
+Arrays are a fundamental data structure used to store a collection of elements of the same type in contiguous memory locations. Each element in an array can be accessed directly using its index, making array access operations very efficient.
+
+Advantages:
+Constant Time Access: Accessing an element by its index takes O(1) time, making retrieval operations very fast.
+Simplicity: Arrays are straightforward to implement and use, making them a good choice for simple scenarios where fixed-size collections are needed.
+
+Analyze the time complexity of each operation (add, search, traverse, delete).
+Add : O(n) 
+Search : O(n) 
+Traverse : O(n) 
+Delete : O(n) 
+
+Discuss the limitations of arrays and when to use them.
+Limitations:
+Fixed Size: Arrays have a fixed size once created. Resizing requires creating a new array and copying elements, which can be inefficient.
+Insertion and Deletion: Adding or removing elements involves shifting other elements, which can be inefficient compared to more flexible data structures like linked lists.
+
+When to Use Arrays:
+When the number of elements is known and fixed.
+When fast access to elements by index is required.
+For scenarios where the array size does not change frequently.
