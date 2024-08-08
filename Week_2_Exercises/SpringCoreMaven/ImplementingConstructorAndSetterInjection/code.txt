@@ -1,0 +1,27 @@
+--BookService--
+package com.library;
+public class BookService {
+    private final BookRepository bookRepository;
+    public BookService(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
+    }
+    public void setBookRepository(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
+    }
+    public String getBook() {
+        return bookRepository.getBook();
+    }
+}
+
+--LibraryManagement--
+package com.library;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+public class LibraryManagement {
+    public static void main(String[] args) {
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BookService bookService = (BookService) context.getBean(BookService.class);
+        System.out.println("Book: " + bookService.getBook());
+    }
+}
+
